@@ -26,7 +26,7 @@ This project builds a smart, interpretable medical assistant that predicts likel
   - **F1-Score:** 0.98
   
   - <img width="512" alt="Screenshot 2025-05-28 at 6 38 52 PM" src="https://github.com/user-attachments/assets/5931b89b-5d0a-4cf9-975d-e9e80de5842c" />
- <img width="396" alt="Screenshot 2025-05-28 at 6 38 30 PM" src="https://github.com/user-attachments/assets/86f02967-25fd-4710-8223-3cd9c7eaf544" />
+    <img width="396" alt="Screenshot 2025-05-28 at 6 38 30 PM" src="https://github.com/user-attachments/assets/86f02967-25fd-4710-8223-3cd9c7eaf544" />
 
 # Train classifier on binary vectors
 clf = RandomForestClassifier(n_estimators=100)
@@ -71,7 +71,8 @@ Output: 1–3 sentence contextual explanation that highlights matching symptoms 
 
 Example Output:
 "The reported symptoms closely match cases of Influenza. Fever, sore throat, and headache are typical, and the absence of rashes makes measles less likely."
-<img width="519" alt="Screenshot 2025-05-28 at 6 42 01 PM" src="https://github.com/user-attachments/assets/38eb3737-d4c7-47e4-84a5-b713cc5cf58f" />
+
+<img width="350" alt="Screenshot 2025-05-28 at 6 42 01 PM" src="https://github.com/user-attachments/assets/38eb3737-d4c7-47e4-84a5-b713cc5cf58f" />
 
 🧪 Evaluation Summary
 
