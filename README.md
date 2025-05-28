@@ -28,9 +28,6 @@ This project builds a smart, interpretable medical assistant that predicts likel
   - <img width="512" alt="Screenshot 2025-05-28 at 6 38 52 PM" src="https://github.com/user-attachments/assets/5931b89b-5d0a-4cf9-975d-e9e80de5842c" />
     <img width="396" alt="Screenshot 2025-05-28 at 6 38 30 PM" src="https://github.com/user-attachments/assets/86f02967-25fd-4710-8223-3cd9c7eaf544" />
 
-# Train classifier on binary vectors
-clf = RandomForestClassifier(n_estimators=100)
-clf.fit(X_train, y_train)
 
 ###🔹 Step 2 – Symptom Embedding
 Model: all-mpnet-base-v2 from SentenceTransformers
