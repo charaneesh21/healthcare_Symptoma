@@ -45,7 +45,7 @@ model = SentenceTransformer("all-mpnet-base-v2")
 embeddings = model.encode(symptom_texts)
 
 
-###🔹 Step 3 – Semantic Retrieval using FAISS
+### 🔹 Step 3 – Semantic Retrieval using FAISS
 Vector database: FAISS IndexFlatIP (cosine similarity)
 
 Indexed ~246K symptom embeddings
@@ -58,7 +58,7 @@ Retrieval effectiveness:
 
 import faiss
 index = faiss.IndexFlatIP(768)
-index.add(embeddings)🔹 Step 3 – Semantic Retrieval using FAISS
+index.add(embeddings)
 
 <img width="529" alt="Screenshot 2025-05-28 at 6 40 24 PM" src="https://github.com/user-attachments/assets/893b8aa2-8341-4357-880c-fdfb60bb54e0" />
 
