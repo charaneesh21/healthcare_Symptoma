@@ -32,7 +32,7 @@ This project builds a smart, interpretable medical assistant that predicts likel
 clf = RandomForestClassifier(n_estimators=100)
 clf.fit(X_train, y_train)
 
-🔹 Step 2 – Symptom Embedding
+###🔹 Step 2 – Symptom Embedding
 Model: all-mpnet-base-v2 from SentenceTransformers
 
 Converts symptom descriptions (e.g., "headache, sore throat") into 768-dimensional vectors
@@ -45,7 +45,7 @@ model = SentenceTransformer("all-mpnet-base-v2")
 embeddings = model.encode(symptom_texts)
 
 
-🔹 Step 3 – Semantic Retrieval using FAISS
+###🔹 Step 3 – Semantic Retrieval using FAISS
 Vector database: FAISS IndexFlatIP (cosine similarity)
 
 Indexed ~246K symptom embeddings
@@ -62,7 +62,7 @@ index.add(embeddings)🔹 Step 3 – Semantic Retrieval using FAISS
 
 <img width="529" alt="Screenshot 2025-05-28 at 6 40 24 PM" src="https://github.com/user-attachments/assets/893b8aa2-8341-4357-880c-fdfb60bb54e0" />
 
-🔹 Step 4 – Diagnosis Explanation via LLM (Mistral-7B)
+###🔹 Step 4 – Diagnosis Explanation via LLM (Mistral-7B)
 Inputs: Top-K retrieved symptom-diagnosis pairs
 
 Uses prompt engineering to guide Mistral-7B for response generation
