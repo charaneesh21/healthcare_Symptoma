@@ -29,7 +29,7 @@ This project builds a smart, interpretable medical assistant that predicts likel
     <img width="396" alt="Screenshot 2025-05-28 at 6 38 30 PM" src="https://github.com/user-attachments/assets/86f02967-25fd-4710-8223-3cd9c7eaf544" />
 
 
-###🔹 Step 2 – Symptom Embedding
+### 🔹 Step 2 – Symptom Embedding
 Model: all-mpnet-base-v2 from SentenceTransformers
 
 Converts symptom descriptions (e.g., "headache, sore throat") into 768-dimensional vectors
@@ -59,7 +59,7 @@ index.add(embeddings)
 
 <img width="529" alt="Screenshot 2025-05-28 at 6 40 24 PM" src="https://github.com/user-attachments/assets/893b8aa2-8341-4357-880c-fdfb60bb54e0" />
 
-###🔹 Step 4 – Diagnosis Explanation via LLM (Mistral-7B)
+### 🔹 Step 4 – Diagnosis Explanation via LLM (Mistral-7B)
 Inputs: Top-K retrieved symptom-diagnosis pairs
 
 Uses prompt engineering to guide Mistral-7B for response generation
